@@ -2,6 +2,10 @@ import mongoose from "mongoose";
 
 const pinSchema = new mongoose.Schema(
   {
+    address: {
+      type: String,
+      required: true,
+    },
     title: {
       type: String,
       required: true,

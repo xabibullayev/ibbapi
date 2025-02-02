@@ -13,6 +13,7 @@ export const getPins = async (req, res) => {
 export const addPin = async (req, res) => {
   try {
     const newPin = new Pin({
+      address: req.body.address,
       title: req.body.title,
       type: req.body.type,
       long: req.body.long,
