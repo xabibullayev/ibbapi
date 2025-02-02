@@ -11,9 +11,9 @@ export const getPins = async (req, res) => {
 };
 
 export const addPin = async (req, res) => {
-  console.log(req.body);
   try {
     const newPin = new Pin({
+      title: req.body.title,
       type: req.body.type,
       long: req.body.long,
       lat: req.body.lat,
